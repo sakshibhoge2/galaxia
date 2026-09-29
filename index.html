@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#050608" />
+    <meta
+      name="description"
+      content="GALAXIA 2026 — PCCOE MESA. Four engineering missions, 9–10 October 2026. Enter the galaxy. Engineer the impossible."
+    />
+    <title>GALAXIA 2026 — PCCOE MESA</title>
+    <link
+      rel="preload"
+      href="assets/fonts/star-jedi.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="preload" href="assets/cockpit-frame.png" as="image" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="warp.js" defer></script>
+    <script src="flight.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#events">Skip to events</a>
+    <div class="galaxy-bg" aria-hidden="true"></div>
+    <canvas id="bgCanvas" aria-hidden="true"></canvas
+    ><canvas id="falconFlight" aria-hidden="true"></canvas>
+    <header id="navbar">
+      <a class="nav-logo" href="#home" aria-label="GALAXIA home">
+        <img src="assets/mesa-logo.png" class="mesa-logo" alt="MESA Logo" />
+
+        <div class="nav-logo-text">
+          <span class="brand-mark">galaxia</span>
+          <small>PCCOE × MESA</small>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a
+        ><a href="#events" class="nav-link">Events</a
+        ><a href="#timeline" class="nav-link">Timeline</a
+        ><a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="#events" class="nav-cta">ENTER THE ARENA <span>↗</span></a>
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <nav
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-label="Mobile navigation"
+      hidden
+    >
+      <a href="#home">Home</a><a href="#events">Events</a
+      ><a href="#timeline">Timeline</a><a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene cockpit-scene" aria-hidden="true">
+          <canvas id="heroWarp"></canvas
+          ><img
+            src="assets/cockpit-frame.png"
+            class="hero-plate cockpit-frame"
+            alt=""
+            fetchpriority="high"
+          />
+          <div class="cockpit-glass"></div>
+          <div class="hero-vignette"></div>
+          <canvas id="atmosphere"></canvas>
+        </div>
+        <div class="hero-coordinate" aria-hidden="true">
+          <span>SECTOR / PCCOE</span><span>MISSION YEAR / 2026</span>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow hero-pretitle">
+            <span class="tiny-star">✦</span> MESA PRESENTS
+            <span class="tiny-star">✦</span>
+          </p>
+          <h1 id="hero-title" class="hero-title">galaxia</h1>
+          <div class="hero-edition">
+            <span></span> TECHFEST 2026 <span></span>
+          </div>
+          <h2 class="hero-tagline">
+            Enter the galaxy.<br /><span>Engineer the impossible.</span>
+          </h2>
+          <div class="hero-date">09 — 10 OCTOBER <span>2026</span></div>
+          <div class="hero-buttons">
+            <a href="#events" class="btn-primary"
+              >EXPLORE THE MISSIONS <span>↗</span></a
+            ><a href="#timeline" class="btn-secondary"
+              >MISSION TIMELINE <span>↓</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>MECHANICAL BUILDING<br /><b>PCCOE, PUNE</b></span
+          ><a href="#events" class="scroll-indicator"
+            ><span class="scroll-line"></span> SCROLL TO DISCOVER</a
+          ><span class="hero-bottom-right"
+            >09 / 10<br /><b>OCTOBER 2026</b></span
+          >
+        </div>
+      </section>
+      <section
+        id="events"
+        class="section events-section"
+        aria-labelledby="events-title"
+      >
+        <div class="section-header">
+          <p class="eyebrow">01 / CHOOSE YOUR CHALLENGE</p>
+          <h2 id="events-title">The galaxy<br /><span>is your arena.</span></h2>
+          <p class="section-intro">
+            Four missions. One galaxy. One lakh reasons to compete.
+          </p>
+        </div>
+        <div
+          class="mission-selector"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Engineering events"
+          tabindex="0"
+        >
+          <div class="events-grid">
+            <article class="event-card">
+              <div class="mission-art mission-art-0" aria-hidden="true">
+                <span>MISSION / 01</span>
+              </div>
+
+              <div class="card-number">01</div>
+
+              <div class="card-stripe"></div>
+
+              <div class="card-content">
+                <div class="card-category">MACHINING · MESA</div>
+
+                <h3>
+                  LATHE<br />
+                  <span>WAR 2.0</span>
+                </h3>
+
+                <p class="card-tagline">MASTER THE LATHE. MASTER THE FORCE.</p>
+
+                <p class="card-description">
+                  Enter the machining battlefield. Precision, control and
+                  engineering skill become your weapons in this mechanical
+                  showdown.
+                </p>
+
+                <div class="card-tags">
+                  <span> PRECISION </span>
+
+                  <span> MACHINING </span>
+
+                  <span> MASTERY </span>
+                </div>
+
+                <div class="card-meta">
+                  <span> 📅 9 — 10 OCTOBER 2026 </span>
+
+                  <span> 📍 PCCOE </span>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScMi4Jjg5DH84DbnCCiTc8D_hgK6cERak9yMh4H1eKKD5dXaA/viewform"
+                  class="card-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  REGISTER NOW
+                  <span> › </span>
+                </a>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="mission-art mission-art-1" aria-hidden="true">
+                <span>MISSION / 02</span>
+              </div>
+
+              <div class="card-number">02</div>
+
+              <div class="card-stripe"></div>
+
+              <div class="card-content">
+                <div class="card-category">ROBOTICS · MESA</div>
+
+                <h3>
+                  GALACTIC<br />
+                  <span>GEARHEADS</span>
+                </h3>
+
+                <p class="card-tagline">SMALL BOTS. BIGGER BATTLES.</p>
+
+                <p class="card-description">
+                  Build your battle-ready machine and take it to the track.
+                  Speed, control and strategy decide who dominates the galactic
+                  arena.
+                </p>
+
+                <div class="card-tags">
+                  <span> BUILD </span>
+
+                  <span> RACE </span>
+
+                  <span> CONQUER </span>
+                </div>
+
+                <div class="card-meta">
+                  <span> 📅 9 — 10 OCTOBER 2026 </span>
+
+                  <span> 📍 PCCOE </span>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScjOPhMdVK9-2dNcRQU0_-V2vJFCXOCG3P_oUbfSAheNTDTTQ/viewform"
+                  class="card-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  REGISTER NOW
+                  <span> › </span>
+                </a>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="mission-art mission-art-2" aria-hidden="true">
+                <span>MISSION / 03</span>
+              </div>
+
+              <div class="card-number">03</div>
+
+              <div class="card-stripe"></div>
+
+              <div class="card-content">
+                <div class="card-category">PUZZLE · CHALLENGE · MESA</div>
+
+                <h3>
+                  THE<br />
+                  <span>GALACTIC ESCAPE</span>
+                </h3>
+
+                <p class="card-tagline">THINK FAST. TRUST YOUR TEAM.</p>
+
+                <p class="card-description">
+                  A Star Wars-inspired team challenge where logic,
+                  communication, timing and teamwork decide whether your squad
+                  survives the trials.
+                </p>
+
+                <div class="card-tags">
+                  <span> PUZZLES </span>
+
+                  <span> TEAMWORK </span>
+
+                  <span> ESCAPE </span>
+                </div>
+
+                <div class="card-meta">
+                  <span> 📅 9 — 10 OCTOBER 2026 </span>
+
+                  <span> 📍 PCCOE </span>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSch6PzcUqh7gNqjYC_wvjfzQVRA-pznfhKnV7nKcud5Cvoz9g/viewform"
+                  class="card-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  REGISTER NOW
+                  <span> › </span>
+                </a>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="mission-art mission-art-3" aria-hidden="true">
+                <span>MISSION / 04</span>
+              </div>
+
+              <div class="card-number">04</div>
+
+              <div class="card-stripe"></div>
+
+              <div class="card-content">
+                <div class="card-category">STRATEGY · AUCTION · MESA</div>
+
+                <h3><span>TECH</span>BID</h3>
+
+                <p class="card-tagline">BID SMART. BUILD YOUR EMPIRE.</p>
+
+                <p class="card-description">
+                  Put your technical knowledge and strategy to the test.
+                  Analyse, bid and build your path to victory in the ultimate
+                  tech auction.
+                </p>
+
+                <div class="card-tags">
+                  <span> STRATEGY </span>
+
+                  <span> BIDDING </span>
+
+                  <span> TECH </span>
+                </div>
+
+                <div class="card-meta">
+                  <span> 📅 9 — 10 OCTOBER 2026 </span>
+
+                  <span> 📍 PCCOE </span>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeBq-jTYOevyVCjOHIG0jYtPvL4D51x_lvDXjaElULQGa2oCA/viewform"
+                  class="card-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  REGISTER NOW
+                  <span> › </span>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="carousel-controls" hidden>
+            <button
+              class="carousel-arrow"
+              id="previousMission"
+              aria-label="Previous event"
+            >
+              ←
+            </button>
+            <div class="carousel-dots" aria-label="Choose an event"></div>
+            <button
+              class="carousel-arrow"
+              id="nextMission"
+              aria-label="Next event"
+            >
+              →
+            </button>
+          </div>
+          <p class="carousel-caption" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </section>
+      <section
+        id="timeline"
+        class="section timeline-section"
+        aria-labelledby="timeline-title"
+      >
+        <div class="timeline-art" aria-hidden="true">
+          <img src="assets/vader-original.png" alt="" loading="lazy" />
+        </div>
+        <div class="timeline-heading">
+          <p class="eyebrow">02 / THE COUNTDOWN TO GREATNESS</p>
+          <h2 id="timeline-title">Every legend<br />has a beginning.</h2>
+          <p>
+            Your mission starts here.<br />Mark the dates. Assemble your squad.
+          </p>
+          <span class="timeline-quote"
+            >MAY THE FORCE<br />OF ENGINEERING<br />BE WITH YOU.</span
+          >
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-wrap">
+            <div class="timeline-line"></div>
+
+            <!-- STEP 1 -->
+
+            <div class="timeline-item left">
+              <div class="timeline-card">
+                <span> SEPTEMBER 2026 </span>
+
+                <h3>REGISTRATIONS OPEN</h3>
+
+                <p>
+                  The galaxy opens its gates. Assemble your team and register
+                  for the battles ahead.
+                </p>
+              </div>
+
+              <div class="timeline-node">01</div>
+            </div>
+
+            <!-- STEP 2 -->
+
+            <div class="timeline-item right">
+              <div class="timeline-card">
+                <span> 8 OCTOBER 2026 </span>
+
+                <h3>REGISTRATIONS CLOSED</h3>
+
+                <p>
+                  Final transmission window closes. All participating teams must
+                  be registered.
+                </p>
+              </div>
+
+              <div class="timeline-node">02</div>
+            </div>
+
+            <!-- STEP 3 -->
+
+            <div class="timeline-item left active">
+              <div class="timeline-card">
+                <span> 9 OCTOBER 2026 </span>
+
+                <h3>DAY 1</h3>
+
+                <p>
+                  The first battles begin. Machines, strategy and engineering
+                  take the field.
+                </p>
+              </div>
+
+              <div class="timeline-node">03</div>
+            </div>
+
+            <!-- STEP 4 -->
+
+            <div class="timeline-item right active">
+              <div class="timeline-card">
+                <span> 10 OCTOBER 2026 </span>
+
+                <h3>DAY 2</h3>
+
+                <p>
+                  The final trials. Champions rise and the galaxy crowns its
+                  winners.
+                </p>
+              </div>
+
+              <div class="timeline-node">04</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="section contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-header">
+          <p class="eyebrow">03 / CONTACT COMMAND</p>
+          <h2 id="contact-title">Send a<br /><span>transmission.</span></h2>
+          <p>
+            Have a question, suggestion, or want to reach the<br />MESA Galactic
+            Command? Send your transmission below.
+          </p>
+        </div>
+        <div class="transmission-wrapper">
+          <div class="transmission-glow"></div>
+
+          <div class="transmission-panel">
+            <div class="panel-top">
+              <div class="signal">
+                <span></span>
+                <span></span>
+                <span></span>
+                <b>MESA COMMUNICATIONS</b>
+              </div>
+
+              <div class="panel-id">GALAXIA // MESA</div>
+            </div>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contactName"> YOUR NAME </label>
+
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="contactEmail"> EMAIL ADDRESS </label>
+
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-field message-field">
+                <label for="contactMessage"> TRANSMISSION MESSAGE </label>
+
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="7"
+                  placeholder="Write your transmission here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-bottom">
+                <div class="transmission-status">
+                  <span class="status-dot"></span>
+
+                  PCCOE · MESA
+                </div>
+
+                <button type="submit" class="transmit-button">
+                  <span>SEND TRANSMISSION</span>
+
+                  <span class="transmit-arrow"> → </span>
+                </button>
+              </div>
+
+              <p
+                id="formStatus"
+                class="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer-logo" href="#home">galaxia</a>
+      <p>PCCOE · MESA · 2026</p>
+      <div class="footer-links">
+        <a href="#home">HOME</a><a href="#events">EVENTS</a
+        ><a href="#timeline">TIMELINE</a><a href="#contact">CONTACT</a>
+      </div>
+      <div class="footer-copy">MAY THE FORCE BE WITH YOU.</div>
+    </footer>
+    <button
+      id="motionToggle"
+      class="motion-toggle"
+      aria-pressed="false"
+      aria-label="Pause background animation"
+    >
+      <span aria-hidden="true">Ⅱ</span> <b>MOTION ON</b>
+    </button>
+  </body>
+</html>

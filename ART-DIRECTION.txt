@@ -1,0 +1,40 @@
+Image-generation workflow: built-in image-generation tool.
+
+Hero prompt:
+A cinematic photorealistic wide 16:9 environment plate for a college science
+and engineering festival website. Two adult fictional space explorers stand
+on the far edges of a dark rocky overlook, quietly surveying space: one hooded
+and cloaked at the far left, one with short brown hair and a layered dark tunic
+at the far right. Both seen from behind and facing inward into the scene.
+Natural realistic flowing fabric, finely detailed silhouettes, a little silver
+rim illumination. No weapons, no fighting, no danger. The entire central
+55 percent is empty near-black negative space for website typography. Heads
+at around 30 percent from top, figures extend to rocky foreground near bottom.
+Sparse tiny stars, realistic wisps of low fog. Almost monochrome black,
+graphite and silver, no bright colorful nebula, no planets, no other objects.
+Ground dissolves into pure black at bottom. Premium film cinematography and
+realistic cloth, not a drawing or a cutout. No text, logos, frames or UI.
+Landscape image.
+
+Mission atlas prompt:
+Create a production photographic texture atlas for four sci-fi engineering
+event cards. Exactly four equal rectangular image panels in a 2 by 2 grid,
+no gutters, no frames, no text anywhere. Top left: tight cinematic closeup of
+an industrial metal lathe cutting a silver cylindrical billet, realistic
+machining tool and tiny white sparks, dark futuristic workshop. Top right:
+realistic compact four-wheel off-road racing rover on a futuristic metal
+track, close low camera, highly engineered metal components. Bottom left:
+a mysterious cloaked adult explorer silhouette at the end of a symmetrical
+silver-lit spaceship corridor with a large doorway, peaceful, no weapons.
+Bottom right: complex metallic turbine engine displayed on an illuminated
+plinth in a dark futuristic auction room, a few dark audience silhouettes
+along lower edges. All four panels cohesive near-monochrome graphite, black,
+silver with only extremely subtle cool steel-blue accents. Premium live-action
+sci-fi production design, highly detailed hard-surface realism, dark edges,
+dramatic light, no cartoon or illustration, no neon red, no colorful gradients,
+no letters, no digits, no logos. Each panel should work cropped to a wide
+cinematic banner.
+
+Falcon: newly rendered transparent spacecraft from the previous revision;
+cinematic weathered metal, three-quarter dorsal view, nose facing right,
+restrained blue engine light. It is not the user's reference photograph.
